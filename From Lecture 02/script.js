@@ -94,33 +94,57 @@ function excercise2(){
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 // Bonus bonus: Use a date instead of a year.
 
-// https://hype.codes/how-get-current-date-javascript
-// This is for the Bonus
-let today = new Date();
-let dd = today.getDate();
-let mm = today.getMonth()+1; //January is 0!
-let yyyy = today.getFullYear();
-
-if(dd<10) {
-    dd = '0'+dd
-} 
-if(mm<10) {
-    mm = '0'+mm
-}
-today = dd + '/' + mm + '/' + yyyy;
-
-function excercise3(){
-    let yourYear = prompt("Ве молам го вашиот ден, месец и година на раѓање:", "dd/mm/yyyy");
-    let userYear = yourYear - today.toString;
-    document.getElementById("excercise-3").innerHTML = "Вашата возрасе е " + userYear + "!";
+function calculateAge (){
+let birthYear = prompt ("Please enter your year of birth:");
+let currentYear;
+currentYear = 2018;
+let yourAge;
+yourAge = currentYear - birthYear;
+document.getElementById("excercise-3").innerHTML = `You are ${yourAge} years old.`;
 }
 
-function calculate_age(dob) { 
-    var diff_ms = Date.now() - dob.getTime();
-    var age_dt = new Date(diff_ms); 
-  
-    return Math.abs(age_dt.getUTCFullYear() - 1970);
+// EXERCISE - #4 (HOMEWORK - OPTIONAL)
+
+// THE FORTUNE TELLER
+// Write a function named tellFortune that:
+// takes 4 arguments: number of children, partner's name, geographic location, job title.
+// outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+// Call that function 3 times with 3 different values for the arguments.
+
+function tellFortune (){
+    let numberofChildren = prompt("Please enter number of children: ");
+    let partnersName = prompt("Please enter your partner`s name: ");
+    let geoLocation = prompt("Please enter your dream city: ");
+    let jobTitle = prompt ("Please enter the name of your profession: ");
+    document.getElementById("excercise-4").innerHTML = `You will be a ${jobTitle} in ${geoLocation}, and married to ${partnersName} with ${numberofChildren} kids.`;
 }
 
-document.getElementById("excercise-3").innerHTML = "Вашата возрасе е " + calculate_age(new Date(1982, 11, 4)) + "!";
-// Сеуште не е решена!
+// EXERCISE - #5 (HOMEWORK)
+
+// WHICH COMES FIRST
+// Write a function named whichComesFirst that:
+// takes the names of two books.
+// outputs which of the given books should be first if put on a shelf
+// Call that function 3 times with 3 different values for the arguments.
+
+function whichComesFirst(){
+let firstBook = prompt ("Enter the name of the first book:");
+let secondBook = prompt ("Enter the name of the second book");
+if(firstBook.length > secondBook.length){
+    document.getElementById("excercise-5").innerHTML = `The ${firstBook} should be placed first.`;
+}else{
+    document.getElementById("excercise-5").innerHTML = `The ${secondBook} should be placed first.`;
+}
+}
+
+// HOMEWORK
+
+// Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
+
+function maxOfThree(){
+    let num1 = prompt("Please enter number 1:");
+    let num2 = prompt("Please enter number 2:");
+    let num3 = prompt("Please enter number 3:");
+    let max = Math.max(num1, num2, num3);
+    document.getElementById("excercise-6").innerHTML = `The largest of them is ${max}.`
+}
