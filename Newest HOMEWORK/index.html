@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Table with table headers! -->
+    <div class="container">
+        <div class="table-content">
+        <table id="table" border="0">
+           <tr>
+               <th  colspan="4" id="contacts">Contacts</th>
+           </tr>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+                <!-- <th>Actions</th> -->
+        </tr>
+        </table>
+        </div>
+    </div>
+    <br><br><br>
+    <!-- Form -->
+    <div class="form">
+        First Name:    <br> <input type="text" name="fname" id="fname"> <br>
+        Last Name:     <br> <input type="text" name="lname" id="lname"> <br>
+        Email:         <br> <input type="text" name="email" id="email"> <br><br>
+   
+
+    <button onclick="addRows()" id="myBtn">Add</button>
+    <button onclick="editRow()" id="editBtn">Edit</button>
+    <button onclick="deleteRow()" id="deleteBtn">Delete</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
