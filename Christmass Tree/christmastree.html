@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Christmas Three</title>
+</head>
+<body> 
+
+    <script>
+
+                ~function makeATree( trunk ){
+                var height = prompt( 'How many *\'s high would you like your tree to be?' );
+
+                if( !+height ){ return makeATree(); }
+
+                console.log(
+                    Array( +height )
+                        .join()
+                        .split( ',' )
+                        .map( function( i, i ){
+                            return Array( +height-i+1 ).join( ' ' ) + Array( 2*i+2 ).join( '*' );
+                        } )
+                        .concat(
+                            trunk = Array( +height ).join( ' ' ) + '**'
+                            , trunk
+                        )
+                        .join( '\n' )
+                    );
+                }();
+  </script>
+
+
+</body>
+</html>
