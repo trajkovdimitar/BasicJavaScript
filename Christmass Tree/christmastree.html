@@ -4,31 +4,27 @@
   
     <title>Christmas Three</title>
 </head>
-<body> 
-
-    <script>
-
-                ~function makeATree( trunk ){
-                var height = prompt( 'How many *\'s high would you like your tree to be?' );
-
-                if( !+height ){ return makeATree(); }
-
-                console.log(
-                    Array( +height )
-                        .join()
-                        .split( ',' )
-                        .map( function( i, i ){
-                            return Array( +height-i+1 ).join( ' ' ) + Array( 2*i+2 ).join( '*' );
-                        } )
-                        .concat(
-                            trunk = Array( +height ).join( ' ' ) + '**'
-                            , trunk
-                        )
-                        .join( '\n' )
-                    );
-                }();
-  </script>
-
-
+<body>
+<script>
+    let rows = prompt("Please enter rows: ", "7");   
+    function drawTree(){
+    for(let i = 1; i <= rows; i++){
+        for(let k=1; k<= ( rows - i); k++){
+            document.write("&nbsp;");
+        }
+        for(let j=1; j <= i; j++){
+            document.write("*");
+        }
+        document.write("<br />");
+    }
+    for (let i=0; i<2; i++) {
+            for (let j=0; j<(rows/2)+2; j++) {
+                document.write("&nbsp");
+            }
+            document.write("*<br />");
+        }
+}
+drawTree(rows);
+    </script>
 </body>
 </html>
