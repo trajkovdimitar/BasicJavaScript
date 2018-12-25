@@ -1,5 +1,5 @@
 {
-  "Person": "true"
+  "Person": "true",
   "firstName": "Dimitar",
   "lastName": "Trajkov",
   "age": "24",
@@ -7,6 +7,6 @@
     "Basketball",
     "Computer Games",
     "Movies",
-    "Learning",
+    "Learning"
   ]
 }
