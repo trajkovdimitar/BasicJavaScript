@@ -1,0 +1,12 @@
+{
+  "Person": "true"
+  "firstName": "Dimitar",
+  "lastName": "Trajkov",
+  "age": "24",
+  "hobbies": [
+    "Basketball",
+    "Computer Games",
+    "Movies",
+    "Learning",
+  ]
+}
