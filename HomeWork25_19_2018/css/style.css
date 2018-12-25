@@ -1,0 +1,41 @@
+/* style.css */
+
+/* Overwrites browser preset values for margin and padding */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Defining body values */
+body{
+    background-color: #333333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+/*  Heading 1 */
+h1{
+    font-size: 30px;
+    padding: 3em 0;
+}
+/* Heading 2 */
+h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 2em 0;
+    color: #333333;
+}
+
+/* Main Container */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Default Display */
+
+.homework{
+    background-color: white;
+    padding: 3em;
+    margin: 2em;
+    color: #504b4b;
+}

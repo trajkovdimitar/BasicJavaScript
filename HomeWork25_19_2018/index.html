@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>HOMEWORK PART 1</h1>
+        <div class="homework">
+            <h2>CREATE YOUR OWN JSON</h2>
+            <p>This json should represent your self <br>
+                    Should have: <br>
+                    firstName <br>
+                    lastName <br>
+                    age <br>
+                    hobbies ( array ) <br>
+                    bestFriend( object with first, last name and age ) <br>
+                    BONUS: try host it on github and make a call to it :)</p><br>
+                    <button id="btn-1">Click me</button>  
+                    <hr><br><br>
+                    <p>https://raw.githubusercontent.com/trajkovdimitar/BasicJavaScript/master/JSONmyself</p>          
+            </div>
+
+            
+            <h1>HOMEWORK PART 2</h1>
+        <div class="homework">
+            <h2>Check the PM10 concentration in centar from 20.12 to 21.12</h2>
+            <p>When button is clicked, make a call to this link: <br>
+                https://api.openaq.org/v1/measurements?country=MK&city=Centar+Municipality&parameter=pm10&date_from=2018-12-20&date_to=2018-12-21
+               <br> Get all measurments results from the array
+                Hint: response -> measurments -> value property <br>
+                Find the average of all measurements    <br>
+                Show the average in the browser in an H1 element    <br>
+                NOTE: JQuery will autmatically parse this call (js will not)    <br>              
+                    <br><button id="btn-2">Click me</button>  
+                    <hr><br><br>
+                    <ul></ul>
+                    <h1></h1>
+            </div>
+        </div>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
